@@ -1,0 +1,93 @@
+body {
+  background-image: url("../img/dots-background.png");
+  background-repeat: repeat;
+  height: 100%;
+}
+footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 15px 0;
+}
+footer img {
+  width: 40px;
+  margin: 0px 5px;
+}
+.thin {
+  font-weight: 100;
+}
+h1 {
+  font-weight: 600;
+  text-align: center;
+}
+.container {
+  width: 85%;
+  min-height: 100vh;
+}
+.card .card-title {
+  font-size: 18px;
+}
+.btn-large {
+  margin: 5px 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.logo h1 {
+  margin: 0;
+}
+.logo .logomark {
+  max-height: 65px;
+  width: auto;
+  margin: 0px 10px 5px 0px;
+}
+.hide {
+  display: none;
+}
+#gallery img {
+  width: 100px;
+}
+.design {
+  display: none;
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+.example-image {
+  width: 19%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+#logo {
+  text-align: center;
+}
+
+
+@media (min-width: 700px) and (max-width: 1072px) {
+  .example-image {
+    width: 27%;
+  }
+}
+@media (max-width: 699px) {
+  .row .col.s4 {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .logo {
+    display: block;
+    text-align: center;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  .example-image {
+    width: 100%;
+  }
+}
