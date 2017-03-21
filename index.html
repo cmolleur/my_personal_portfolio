@@ -6,21 +6,14 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="scss/_layout.scss"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="scss/_mixins.scss"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="scss/_variables.scss"  media="screen,projection"/>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+
     <!--Let browser know website is optimized for mobile-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js" charset="utf-8"></script>
-
-
     <link href="css/lightbox.css" rel="stylesheet">
-    <!--gallery files-->
-		<!-- <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
-		<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
-		<script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
-		<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />
-    <script type="text/javascript">
-			jQuery(document).ready(function(){
-				jQuery("#gallery").unitegallery();
-			});
-    </script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Colette Molleur</title>
   </head>
@@ -37,13 +30,14 @@
             <img class="logomark" src="img/logo.png" alt="" />
             <h1>COLETTE.<span class="thin">MOLLEUR</span></h1>
           </div> -->
-          <h5>Web Developer | Graphic and Web Designer</h5>
+          <h5>UX, Web & Graphic Designer ・ Web Developer</h5>
         </div>
       </div>
 
 
       <div id="buttons" class="row center">
         <a id="web" class="waves-effect waves-light btn-large">Web Development</a>
+        <a id="ux" class="waves-effect waves-light btn-large">Process</a>
         <a id="design" class="waves-effect waves-light btn-large">Graphic Design</a>
       </div>
 
@@ -172,6 +166,9 @@
         <a class="example-image-link" href="img/big/I-81_TRB.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
           <img class="example-image" src="img/thumbs/print6.png" alt="" />
         </a>
+        <a class="example-image-link" href="img/big/move-announcement.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
+          <img class="example-image" src="img/thumbs/move_announcement.jpg" alt="" />
+        </a>
         <a class="example-image-link" href="img/big/todayscampus_cover.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
           <img class="example-image" src="img/thumbs/print7.png" alt="" />
         </a>
@@ -192,6 +189,9 @@
         </a>
         <a class="example-image-link" href="img/big/nickfit-logo-new.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
           <img class="example-image" src="img/thumbs/nickfit-logo-new-small.jpg" alt="" />
+        </a>
+        <a class="example-image-link" href="img/big/bitterroot.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
+          <img class="example-image" src="img/thumbs/bitterroot.jpg" alt="" />
         </a>
         <a class="example-image-link" href="img/big/primecycle-logo.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
           <img class="example-image" src="img/thumbs/primecycle-logo.png" alt="" />
@@ -215,6 +215,111 @@
 
       </div>
 
+      <div class="section ux">
+        <div class="row">
+          <section id="cd-timeline" class="cd-container">
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-picture">
+        				<img src="img/cd-icon-discovery.svg" alt="Discovery">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Discovery</h2>
+        				<p>Research to learn more about the user's background, motivations, and objectives.</p>
+                <ul>
+                  <li>Interviews</li>
+                  <li>Surveys</li>
+                  <li>Emphasize</li>
+                  <li>Stakeholder meetings</li>
+                  <li>User and business Goals</li>
+                </ul>
+        				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-movie">
+        				<img src="img/cd-icon-define.svg" alt="Define">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Define</h2>
+        				<p>Interpret your findings from discovery to create a user point-of-view to help understand what's working and what's not.</p>
+                <ul>
+                  <li>Peronas</li>
+                  <li>User Flows</li>
+                  <li>Site Map & Navigation</li>
+                  <li>Feasabile/Versatile vs Importance</li>
+                  <li>Feature Prioritization</li>
+                  <li>IA</li>
+                  <li>Business Metrics</li>
+                </ul>
+        				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-picture">
+        				<img src="img/cd-icon-design.svg" alt="Design">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Design</h2>
+        				<p>Design and Ideate is the chance to brainstorm concepts or refine existing ideas. This step gets repeated after testing if there are more improvements to be made.</p>
+                <ul>
+                  <li>Wireframes</li>
+                  <li>Mockups</li>
+                  <li>Prototyping</li>
+                  <li>Layout & Interaction Design</li>
+                  <li>Style guides</li>
+                  <li>User Testing</li>
+                </ul>
+        				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-movie">
+        				<img src="img/cd-icon-develop.svg" alt="Develop">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Develop</h2>
+        				<p>Once all content and designs are finalized, the mockups are ready to come to life! Using the appropriate frameworks and technologies, code templates are created which will then be re-tested to ensure there are no errors, bugs, or dead links.</p>
+                <ul>
+                  <li>Graphic elements</li>
+                  <li>Scripts</li>
+                  <li>Stylesheets</li>
+                  <li>Code Framework</li>
+                  <li>Internal Testing</li>
+                </ul>
+        				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-picture">
+        				<img src="img/cd-icon-deploy.svg" alt="Deploy">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Deploy</h2>
+        				<p>The application or site is ready for launch. This is not the final step, since design, develop and deploy will be repeated times during an application's lifetime. It's important to monitor your site's engagement and success through analytics and continuous user feedback.</p>
+                <ul>
+                  <li>Web Analytics</li>
+                  <li>BETA launch and feedback</li>
+                  <li>A/B testing</li>
+                  <li>Build Network</li>
+                  <li>Engage!</li>
+                </ul>
+        				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+
+        	</section> <!-- cd-timeline -->
+        </div>
+      </div>
 
   </div>
   <footer>
@@ -225,8 +330,9 @@
     <!--Import jQuery before materialize.js-->
     <script src="js/scripts.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/timeline.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/lightbox.js"></script>
 
   </body>
-</html
+</html>
